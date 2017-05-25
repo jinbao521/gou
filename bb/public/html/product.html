@@ -84,20 +84,4 @@
 
 	</div>
 </body>
-<script type="text/javascript">
-	var oBtn = document.getElementsByTagName('button');
-	var ADiv = document.getElementById('cc');
-	var oDiv = ADiv.getElementsByTagName('div');
-			for(var i=0;i<oBtn.length;i++){
-			oBtn[i].index=i;
-			oBtn[i].addEventListener('touchstart',function(ev){
-				for(var i=0;i<oBtn.length;i++){
-					oBtn[i].className='';
-					oDiv[i].style.display='none';
-				}
-				oBtn[this.index].className='active';
-				oDiv[this.index].style.display='block';
-			},false)
-		}
-</script>
 </html>
