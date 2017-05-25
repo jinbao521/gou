@@ -1,6 +1,5 @@
 /*message_header*/
-
-.message_header {
+.message_display_header{
 	width: 100%;
 	height: 2rem;
 	line-height: 2rem;
@@ -13,18 +12,14 @@
 	left: 0;
 	z-index: 999;
 }
-
-.message_header span {
+.message_display_header span{
 	position: absolute;
 	right: 1rem;
 	top: 0.5rem;
 	font-size: 1rem;
 }
-
-
 /*message_lyb*/
-
-.message_lyb {
+.message_display_lyzs{
 	width: 100%;
 	height: 2rem;
 	line-height: 2rem;
@@ -32,102 +27,48 @@
 	border-bottom: 0.1rem solid #ccc;
 	font-weight: bold;
 	margin-top: 2rem;
+	/*background: #fff;*/
 }
-
-.message_lyb span {
+.message_display_lyzs span{
 	color: #008f3d;
 	margin: 0 0.5rem 0 0.3rem;
 	vertical-align: middle;
 }
-
-
-/*message_main*/
-
-.message_main {
+/*message_display_main*/
+.message_display_main{
 	width: 100%;
+	padding: 0.5rem;
 	overflow: hidden;
-	padding: 1rem;
 	margin-bottom: 2rem;
 }
-
-.message_main p {
-	width: 100%;
-	font-size: 0.7rem;
-	text-align: center;
-}
-
-.message_main>p span {
-	font-size: 0.6rem;
-	margin-right: 0.5rem;
-}
-
-.message_main>div {
+.message_display_main li{
 	width: 100%;
 	overflow: hidden;
-}
-
-.message_main>div p {
-	width: 100%;
-	overflow: hidden;
-	margin: 0;
-	position: relative;
-	line-height: 2.4rem;
-}
-
-.message_main>div p input {
-	width: 100%;
-	height: 2.4rem;
-	border-radius: 0.2rem;
-	text-indent: 2rem;
-	color: #949494;
-	font-size: 0.65rem;
-	float: left;
-	outline: none;
-	border: none;
-	border: 1px solid #75A8E4;
-	margin-bottom: 0.5rem;
-}
-
-.message_main>div p textarea {
-	width: 100%;
-	height: 4.85rem;
-	line-height: 2rem;
-	border-radius: 0.2rem;
-	text-indent: 2rem;
-	outline: none;
-	border: none;
-	border: 1px solid #75A8E4;
-}
-
-.message_main>div p span {
-	position: absolute;
-	left: 0.5rem;
-	top: 0.9rem;
+	border-bottom: 1px solid #337AB7;
+	margin-bottom: 1rem;
 	font-size: 0.6rem;
+	background-color: rgba(255,250,205,0.8);
+	padding: 0.5rem;
 }
-
-.message_main>div button:nth-child(6) {
-	margin-top: 1rem;
+.message_display_main li div:nth-child(3){
+	text-align: right;
 }
-
-.message_main>div button {
-	width: 100%;
-	height: 2rem;
-	text-align: center;
-	line-height: 2rem;
-	color: #FFFFFF;
-	background: #04a059;
-	font-size: 0.7rem;
-	font-weight: bold;
-	outline: none;
-	border: none;
-	border: 1px solid #75A8E4;
+.message_display_main li div:nth-child(3) span{
+	font-size: 0.6rem;
+	vertical-align: middle;
 }
-
-
+.message_display_main li div:nth-child(3) span:nth-child(2){
+	margin-left: 0.5rem;
+}
+.message_display_main li div:nth-child(3) span i{
+	font-style: normal;
+}
+.message_display_main li>p{
+	text-indent: 1.25rem;
+	margin-top: 0.5rem;
+}
 /*footer*/
-
-footer {
+footer{
 	width: 100%;
 	height: 2rem;
 	line-height: 2rem;
@@ -139,6 +80,9 @@ footer {
 	font-size: 0.7rem;
 	background: #1CB88B;
 	z-index: 999;
+}
+.zang{
+	color: #007AFF;
 }
 
 
@@ -196,6 +140,3 @@ footer {
 	overflow: hidden;
 }
 
-.cover_rightClass{
-	background: #41474e;
-}
