@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/message board.css"/>
-	<script src="../javascripts/message board.js"></script>
-</head>
-<body>
-	
-</body>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>留言板</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/message board.css" />
+		<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<script src="../javascripts/message board.js"></script>
+		<script src="../../node_modules/jquery/dist/jquery.js"></script>
+	</head>
+
+	<body>
+		<!--header strat-->
+		<div class="message_header">
+			爱 D o g 家
+			<span class="glyphicon glyphicon-list menu"></span>
+		</div>
+		<!--导航-->
+		<div class="ccc">
+			<div class="cover">
+				<div class="cover_right">
+					<ul>
+						<li class="index">
+							<span class="glyphicon glyphicon-home"></span> 首页
+						</li>
+						<li class="index_dogshow">
+							<span class="glyphicon glyphicon-th-large"></span> 宠物展示
+						</li>
+						<li class="index_dogNews">
+							<span class="glyphicon glyphicon-list-alt"></span> 狗狗趣事
+						</li>
+						<li class="index_AboutUs">
+							<span class="glyphicon glyphicon-user"></span> 关于我们
+						</li>
+						<li class="index_messageBoard cover_rightClass">
+							<span class="glyphicon glyphicon-comment"></span> 留言板
+						</li>
+					</ul>
+				</div>
+				<!--message_lyb strat-->
+				<div class="message_lyb">
+					<span class="glyphicon glyphicon-bookmark"></span>留言板
+				</div>
+				<!--message_main start-->
+				<div class="message_main">
+					<p><span class="glyphicon glyphicon-edit"></span>发表您的留言</p>
+					<div>
+						<p><input type="text" placeholder="姓名(必填)" /><span class="glyphicon glyphicon-user"></span></p>
+						<p><input type="text" placeholder="邮箱" /><span class="glyphicon glyphicon-envelope"></span></p>
+						<p><input type="text" placeholder="电话" /><span class="glyphicon glyphicon-earphone"></span></p>
+						<p><textarea placeholder="内容"></textarea><span class="glyphicon glyphicon-comment"></span></p>
+						<button>提 交</button>
+						<button class="lyzs">留言展示</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer start-->
+		<footer>
+			&copy; 2017 版权所有 （爱 D o g 家）
+		</footer>
+	</body>
+
 </html>
