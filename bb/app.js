@@ -7,12 +7,13 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var login = require('./routes/login');           //路径
+// var user = require('./routes/user');
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'jade'); //ejs
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -24,7 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-
+app.use('/login',login)                      //新增
+// app.use('/user',user)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -42,8 +44,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-app.listen(8000,function(){
-	console.log("傻逼？")
+app.listen(8005,function(){
+  console.log("启动成功")
 })
 module.exports = app;
