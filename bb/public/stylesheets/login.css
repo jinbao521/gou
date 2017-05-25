@@ -1,0 +1,91 @@
+body{
+		height: 100vh;
+		background: url(../img/2.jpg) no-repeat;
+		background-size: 100% 100%;
+		position: relative;
+		z-inde:11;
+
+	}
+	::-webkit-input-placeholder{
+		color: #ccc;
+	}
+	.jb_heder{
+		width: 100%;
+		height: 2rem;
+		background: #1EA166;
+	}
+	.jb_heder p{
+		line-height: 2rem;
+		text-align: center;
+		font-size: 0.7rem;
+		color: #fff;
+	}
+	h1{
+		text-align: center;
+		padding-top: 4rem;
+		letter-spacing: 0.4rem;
+		padding-bottom: 2rem;
+		color: #fff;
+	}
+	.logo{
+		width: 5rem;
+		height: 5rem;
+		margin:0 auto;
+		border-radius: 50%;
+		background-image: url(../img/1.png);
+		background-size: 100% 100%;
+	}
+	.deng{
+		width: 80%;
+		height: auto;
+		/*background: red;*/
+		margin-top: 4rem;
+		margin:0 auto;
+	}
+	.deng .p1{
+		text-align: center;
+		padding-top: 1rem;
+		font-size: 0.5rem;
+		color: #fff;
+	}
+	.p1 input{
+		width: 85%;
+		height: 1rem;
+		text-indent: 0.3rem;
+		color: #ccc;
+		outline: none;
+		border: none;
+		border: 1px solid #75A8E4;
+		padding: 0.2rem 0rem 0.2rem 0rem;
+		background: none;
+		font-size: 0.6rem;
+	}
+	button{
+		text-align: center;
+		width: 85%;
+		height: 2rem;
+		margin-bottom: 1rem;
+		font-size: 0.6rem;
+		background: none;
+		border: none;
+		outline: none;
+		color: #fff;
+		border: 1px solid #75A8E4;
+	}
+	.zhuce{
+		height: 1rem;
+		width: 100%;
+		/*background: yellow;*/
+	}
+	.zhuce span{
+		font-size: 0.3rem;
+		display: block;
+		float: left;
+		text-decoration: underline;
+		color: #fff;
+		font-size: 0.5rem;
+	}
+	.span1{
+		margin-left: 7.7rem;
+		margin-right:0.4rem;
+	}
