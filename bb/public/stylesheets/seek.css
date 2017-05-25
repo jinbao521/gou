@@ -1,0 +1,74 @@
+.seek_header{
+	width: 100%;
+	height: 2.75rem;
+	border-bottom: 1px solid #dedede;
+	position: relative;
+}
+.seek_header_left{
+	width: 1.5rem;
+	height: 100%;
+	float: left;
+	/*background: red;*/
+	text-align: center;
+}
+.seek_header_left>p{
+	font-size: 1rem;
+	line-height: 2.75rem;
+	color: #a2a3a5;
+}
+.seek_header_right{
+	width:13.5rem;
+	height: 1.5rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border:1px solid #dedede;
+	border-radius: 2px;
+}
+.index_searchBtn{
+	width: 1.4rem;
+	height: 1.4rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background:#aaaaaa;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.5rem;
+	color: #fff;
+}
+.index_searchBtn_sanjiao{
+	width: 0.5rem;
+	height: 0.5rem;
+	background:#aaaaaa;
+	position: absolute;
+	left: -0.25rem;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	transform: rotate(45deg);
+}
+.index_searchImages{
+	position: absolute;
+	margin-top: 0.3rem;
+	margin-left: 0.3rem;
+	font-size: 0.75rem;
+	color: #ccc;
+}
+.index_searchText{
+	width: 10rem;
+	height: 1rem;
+	outline: none;
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	font-size: 0.7rem;
+	left: 1.5rem;
+	padding: 0.5rem 0 0.5rem 0;
+	border: none;
+}
