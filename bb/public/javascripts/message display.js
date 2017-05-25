@@ -5,10 +5,22 @@ window.onload = function() {
 	};
 	//rem计算
 
-	//跳转留言展示
-	$('.lyzs').click(function() {
-		location.href = "message display.html";
-	})
+	//点赞
+	for(var i = 0; i < $(".zan").length; i++) {
+		$(".zan").eq(i).click(function() {
+			if($(this).hasClass("zang")) {
+				var num = $(this).find("i").text();
+				num--;
+				$(this).find('i').text(num);
+				$(this).removeClass('zang');
+			} else {
+				var num = $(this).find("i").text();
+				num++;
+				$(this).find('i').text(num);
+				$(this).addClass('zang');
+			}
+		})
+	}
 
 	//导航
 	var flag = true;
@@ -51,14 +63,13 @@ window.onload = function() {
 			$("body").removeClass("noJob");
 		}
 	})
-	
+
 	$(window).scroll(function() {
 		var toTop = $(document).scrollTop();
 		$(".cover_right").css({
 			"top": toTop
 		})
 	})
-	
 	
 	//页面跳转
 	$(".index").bind("touchend", function() {
