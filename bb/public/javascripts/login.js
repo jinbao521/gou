@@ -4,4 +4,10 @@ window.onload = function() {
 		document.documentElement.style.fontSize = document.documentElement.clientWidth / 320 * 20 + 'px';
 	};
 	//rem计算
+	$("#zhuce").click(function(){
+		window.location.href="../html/register.html"
+	})
+	
+	
+	
 }

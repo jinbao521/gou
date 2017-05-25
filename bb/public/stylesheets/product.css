@@ -1,0 +1,299 @@
+
+.product_header{
+	width: 100%;
+	height: 2rem;
+	background:#1ea166;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #fff;
+	position: fixed;
+	top:0;
+	left:0;
+}
+.about_ding{
+	height:2rem;
+}
+
+.head{
+	width: 100%;
+    height: 2rem;
+    background: #1EA166;
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.head p{
+	line-height: 2rem;
+	text-align: center;
+	display: block;
+	font-size: 1rem;
+	color: #fff;
+	margin: 0;
+	letter-spacing: 0.2rem;
+}
+.head span{
+	display: block;
+	font-size: 1rem;
+	position: absolute;
+	right: 1rem;
+	top: 0.5rem;
+}
+.pro_banner{
+	width:100%;
+	height:16rem;
+}
+.pro_banner>img{
+	display: block;
+	width:100%;
+	height: 16rem;
+}
+.pro_back{
+	width:100%;
+	height:2rem;
+	background: white;
+	opacity: 0.5;
+	position: fixed;
+	top:2rem;
+	left:0;
+}
+.pro_back>p:nth-child(1){
+	display: block;
+	width:1.6rem;
+	height:1.6rem;
+	border-radius: 50%;
+	background:#999;
+	float: left;
+	margin-left:0.4rem;
+	margin-top:0.2rem;
+	z-index: 1000;
+	text-align: center;
+}
+.pro_back>p:nth-child(2){
+	display: block;
+	width:1.6rem;
+	height:1.6rem;
+	border-radius: 50%;
+	background:#999;
+	float: right;
+	margin-right:1rem;
+	margin-top:0.2rem;
+	z-index: 1000;
+	text-align: center;
+}
+.pro_price{
+	width:15.3rem;
+	height:2.8rem;
+	font-size: 0.6rem;
+	color:#00491d;
+	padding-left:0.7rem;
+	line-height: 2.8rem;
+	border-bottom: 1px solid #7a7a7a;
+	background: #bfbbbb;
+}
+.pro_anniu{
+	width:100%;
+	height:2.4rem;
+}
+.pro_anniu>button:nth-child(1){
+	width:50%;
+	height:2.4rem;
+	border-bottom: 1px solid #7a7a7a;
+	text-align: center;
+	line-height: 2.4rem;
+	font-size: 0.6rem;
+	float: left;
+}
+.pro_anniu>button:nth-child(2){
+	width:50%;
+	height:100%;
+	border-bottom: 1px solid #7a7a7a;
+	text-align: center;
+	line-height: 2.4rem;
+	font-size: 0.6rem;
+	float: left;
+}
+.pro_anniu>button.active{
+	border-bottom:2px solid #1CB88B;
+	color:#00491D;
+}
+.pro_fenye{
+	width:100%;
+	height:auto;
+}
+.pro_fenye>ul{
+	width:100%;
+	height:auto;
+}
+.pro_fenye>ul>li{
+	width:100%;
+	height:2rem;
+	border-bottom: 1px solid #999999;
+	text-align: center;
+	line-height: 2rem;
+}
+.pro_fenye>ul>li>p:nth-child(1){
+	font-size: 0.6rem;
+	color:#B4B1B1;
+	float: left;
+	margin-left:1rem;
+	width:3.4rem;
+}
+.pro_fenye>ul>li>p:nth-child(2){
+	font-size: 0.6rem;
+	color:#999999;
+	float: left;
+	margin-left:1.6rem;
+}
+.pro_fenye1{
+	width:16rem;
+	height:auto;
+	display: none;
+}
+.pro_fenye1>ul>p{
+	font-size:0.6rem;
+	margin-left:1.5rem;
+	line-height: 1rem;
+}
+footer{
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	color: #FFFFff;
+	font-size: 0.7rem;
+	background: #1CB88B;
+	z-index: 999;
+}
+.ssss{
+	width: 100%;
+	height:2rem;
+}
+
+	color: #fff;
+}
+.jb_biao{
+	width: 100%;
+    height: 2rem;
+    position: relative;
+    z-index: 1;
+}
+.jb_biao p{
+	line-height: 2rem;
+	margin: 0rem;
+	display: block;
+	text-indent: 0.1rem;
+	font-size: 0.6rem;
+	letter-spacing: 0.2rem;
+}
+.hang{
+	width: 16rem;
+	height: 0.1rem;
+	display: block;
+}
+
+.jb_main{
+	width: 100%;
+	height: 5rem;
+/*	background: red;*/
+/*	border-top:0.1rem solid #e5eae8; */
+	margin-top: 1rem;
+}
+
+.jb_main img{
+	width: 4rem;
+	height: 4rem;
+	float: left;
+	margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.jb_main p{
+	line-height: 5rem;
+	font-size: 0.6rem;
+}
+.huanye{
+	text-align: center;
+	font-size: 0.6rem;
+	height: 1.5rem;
+	line-height:1.5rem;
+	margin-bottom: 2rem;
+}
+.huanye a{
+	color: #999;
+	margin: 0rem 0.1rem 0rem 0.1rem;
+}
+.huanye span{
+	color: #1EA166;
+}
+
+.footer{
+	width: 100%;
+	height: 2rem;
+	background: #1EA166;
+	position:fixed;
+	bottom:0;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.7rem;
+}
+/*导航*/
+
+.cover {
+	width: 16rem;
+	/*overflow: hidden;*/
+	position: relative;
+	left: 0;
+}
+
+.ccc {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	top: 2rem;
+}
+
+.cover_right {
+	width: 4rem;
+	height: 25rem;
+	background: #000000;
+	position: absolute;
+	right: -4rem;
+	top: 0;
+}
+
+.cover_right>ul>li {
+	width: 4rem;
+	height: 4rem;
+	color: #fff;
+	text-align: center;
+	line-height: 6rem;
+	position: relative;
+	left: 4rem;
+	font-size: 0.7rem;
+}
+
+.cover_rightClass {
+	background: #41474e;
+}
+
+.cover_right>ul>li>span {
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	transition-duration: 0.1s;
+	font-size: 1rem;
+}
+
+.noJob {
+	overflow: hidden;
+}

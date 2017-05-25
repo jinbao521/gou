@@ -5,11 +5,24 @@ window.onload = function() {
 	};
 	//rem计算
 
-	$(".glyphicon").click(function(){
-		
-	})
+	//点赞
+	for(var i = 0; i < $(".zan").length; i++) {
+		$(".zan").eq(i).click(function() {
+			if($(this).hasClass("zang")) {
+				var num = $(this).find("i").text();
+				num--;
+				$(this).find('i').text(num);
+				$(this).removeClass('zang');
+			} else {
+				var num = $(this).find("i").text();
+				num++;
+				$(this).find('i').text(num);
+				$(this).addClass('zang');
+			}
+		})
+	}
 
-		//导航
+	//导航
 	var flag = true;
 	$(".menu").bind("touchend", function() {
 		if(flag == true) {
@@ -51,24 +64,27 @@ window.onload = function() {
 		}
 	})
 
-		$(window).scroll(function(){
-		var toTop=$(document).scrollTop();
-		$(".cover_right").css({"top":toTop})	
+	$(window).scroll(function() {
+		var toTop = $(document).scrollTop();
+		$(".cover_right").css({
+			"top": toTop
+		})
 	})
-
-
-	$(".shouye").click(function(){
-		window.location.href="../index.html";
+	
+	//页面跳转
+	$(".index").bind("touchend", function() {
+		location.href = "../index.html"
 	})
-	$(".show").click(function(){
-		window.location.href="show.html";
+	$(".index_messageBoard").bind("touchend", function() {
+		location.href = "message board.html"
 	})
-	$(".qushi").click(function(){
-		window.location.href="news.html";
+	$(".index_dogNews").bind("touchend", function() {
+		location.href = "news.html"
 	})
-	$(".guanyu").click(function(){
-		window.location.href="About Us.html";
+	$(".index_AboutUs").bind("touchend", function() {
+		location.href = "About Us.html"
 	})
-
-
+	$(".index_dogshow").bind("touchend", function() {
+		location.href = "show.html"
+	})
 }

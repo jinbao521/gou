@@ -3,13 +3,156 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css"/>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/product.css"/>
 	<script src="../javascripts/product.js"></script>
+	<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body>
+	<div class="product_header">
+		爱 D o g 家
+		<span class="glyphicon glyphicon-list"></span>
+	</div>
+	<div class="about_ding">
+		
+	</div>
+	<div class="pro_banner">
+		<img src="../images/ab_img/banner.jpg" alt="" />
+	</div>
+	<div class="pro_back">
+		<p><img src="../images/ab_img/3.png" alt="" /></p>
+		<p><img src="../images/ab_img/4.png" alt="" /></p>
+	</div>
+	<div class="pro_price">
+		￥0.00
+	</div>
+	<div class="pro_anniu">
+		<button class="active">产品详情</button>
+		<button>产品参数</button>
+	</div>
+	<div id="cc">
+		<div class="pro_fenye">
+			<ul>
+				<li><p>品牌</p><p>7d</p></li>
+				<li><p>品牌</p><p>7d</p></li>
+				<li><p>品牌</p><p>7d</p></li>
+				<li><p>品牌</p><p>7d</p></li>
+				<li><p>品牌</p><p>7d</p></li>
+			</ul>
+		</div>
+		<div class="pro_fenye1">
+			<ul>
+				<p>
+					储藏方法：避免阳光直射，置阴凉干燥处<br />
+					保质期：12个月<br />
+					包装方式: 包装<br />
+					品牌: 7D<br />
+					系列: 芒果干<br />
+					规格: 100g<br />
+					重量(g): 100<br />
+					加工工艺: 果干类<br />
+					是否含糖: 含糖<br />
+					是否为有机食品: 是<br />
+					产地: 菲律宾<br />
+				</p>
+			</ul>
+		</div>
+	</div>
+	<div class="ssss">
+		
+	</div>
+	<footer>
+		&copy; 2017 版权所有 （爱D o g 家）
+	</footer>
+	<div class="head">
+		<p>爱Dog家</p>
+		<span class="glyphicon glyphicon-list menu"></span>
+	</div>
+	<!-- 导航 -->
+	<div class="ccc">
+	<div class="cover">
+	<div class="cover_right">
+					<ul>
+						<li class="shouye">
+							<span class="glyphicon glyphicon-home"></span> 首页
+						</li>
+						<li class="show">
+							<span class="glyphicon glyphicon-th-large"></span> 宠物展示
+						</li>
+						<li class="qushi">
+							<span class="glyphicon glyphicon-list-alt"></span> 狗狗趣事
+						</li>
+						<li class="guanyu">
+							<span class="glyphicon glyphicon-user"></span> 关于我们
+						</li>
+						<li class="liuyan">
+							<span class="glyphicon glyphicon-comment"></span> 留言板
+						</li>
+					</ul>
+				</div>
+
+	<div class="jb_biao">
+		<p class="">产品展示</p>
+		
+		<img src="../img/jb_tiao.jpg" alt="" class="hang">
+	</div>
+
+	<div class="jb_main">
+		<img src="../img/td.png" alt="">
+		<p>松塔千层酥饼干</p>
+	</div>
+
+	<div class="jb_main">
+		<img src="../img/td.png" alt="">
+		<p>泰国原装进口特级腰果香酥椰子球</p>
+	</div>
+
+	<div class="jb_main">
+		<img src="../img/td.png" alt="">
+		<p>越南tipo 白巧克力面包干</p>
+	</div>
 	
+	<div class="jb_main">
+		<img src="../img/td.png" alt="">
+		<p>松塔千层酥饼干</p>
+	</div>
+
+	<div class="jb_main">
+		<img src="../img/td.png" alt="">
+		<p>泰国原装进口特级腰果香酥椰子球</p>
+	</div>
+
+	<div class="jb_main">
+		<img src="../img/td.png" alt="">
+		<p>越南tipo 白巧克力面包干</p>
+	</div>
+
+	<p class="huanye"><span>上一页</span><a href="">1/4</a><span>下一页</span></p>
+	</div>
+	</div>
+	<div class="footer">
+		&copy; 2017 版权所有 （爱D o g 家）
+
+	</div>
 </body>
+<script type="text/javascript">
+	var oBtn = document.getElementsByTagName('button');
+	var ADiv = document.getElementById('cc');
+	var oDiv = ADiv.getElementsByTagName('div');
+			for(var i=0;i<oBtn.length;i++){
+			oBtn[i].index=i;
+			oBtn[i].addEventListener('touchstart',function(ev){
+				for(var i=0;i<oBtn.length;i++){
+					oBtn[i].className='';
+					oDiv[i].style.display='none';
+				}
+				oBtn[this.index].className='active';
+				oDiv[this.index].style.display='block';
+			},false)
+		}
+</script>
 </html>
